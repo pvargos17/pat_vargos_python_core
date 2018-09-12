@@ -79,6 +79,8 @@ the association of a variable with an object
 
 18 - What is it called when an object has more than one reference?
 
+Aliased
+
 19 - Give an example of an operation that modifies a list.
 
 append()
@@ -90,6 +92,4 @@ list()
 21 - What is one reason it is important to know the difference between the two kinds of operations above?
 
 because if you want to alter a current list, you would just want to modify instead of creating an entire new list with just with what you want
-
-
 
