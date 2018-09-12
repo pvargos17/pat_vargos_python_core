@@ -30,33 +30,66 @@ Ex : cheese [ 'cheddar', 'edam', 'Gouda' ]
 
 8 - How can you use the + and * operators on lists?
 
-
++ operater concatenates two lists
+* repeats a list given the number of times
 
 9 - What is an augmented assignment statement?
 
++= add value each time
+
 10 - WHat are three ways delete an element from a list? How are they different?
+
+pop()
+del
+remove
 
 11 - What is the difference between and list and a string?
 
+string is a sequence of characters immutable
+list is a sequence of values and mutable
+
 12 - What is the difference between the list() function and the split() method?
+
+list() makes anything you add into the () into a list
+split()splits and string and makes each word or character in a list
 
 13 - How do you use a delimiter with the split() method?
 
+s = 'spam-spam-spam'
+deliminter = "-"
+t = s.split(deliminter)
+t
+['spam', 'spam', 'spam']
+
 14 - What is the `is` operator used for?
+
+to check if two variables refer to the same object
 
 15 - If two objects are identical does that also make them equivalent?
 
+yes
+
 16 - If two objects are equivalent does that also make them identical?
 
+nope because they are not the same object
+
 17 - What is a reference?
+
+the association of a variable with an object
 
 18 - What is it called when an object has more than one reference?
 
 19 - Give an example of an operation that modifies a list.
 
+append()
+
 20 - Give an example of an operation that creates a new list.
 
+list()
+
 21 - What is one reason it is important to know the difference between the two kinds of operations above?
+
+because if you want to alter a current list, you would just want to modify instead of creating an entire new list with just with what you want
 
 
 
