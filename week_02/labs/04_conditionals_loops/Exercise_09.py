@@ -13,3 +13,11 @@ The output should look something like this:
 	10|20|30|40|50|60|70|80|90|100|
 
 '''
+x_table = ""
+
+for num in range(1, 11):
+    for n in range(1, 11):
+        x_table += {num * n: <3}
+    x_table += "\n"
+
+print(x_table)

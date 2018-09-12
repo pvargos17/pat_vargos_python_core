@@ -7,3 +7,6 @@ Receive the following arguments from the user:
 Display the cost of the trip in the console.
 
 '''
+def cost_func(x,y,z):
+    return y/z * x
+print(cost_func(120,30,3))

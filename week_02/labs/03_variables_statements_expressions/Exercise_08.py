@@ -11,3 +11,9 @@ Output should read like - "27.4 degrees celsius = 81.32 degrees fahrenheit"
 NOTE: if you get an error, look up what input() returns!
 
 '''
+
+def converter(celsius):
+    f = (celsius * 1.8 + 32)
+    return "{} degrees celsius = {} degrees fahrenheit".format(celsius,f)
+
+print(converter(27.4))

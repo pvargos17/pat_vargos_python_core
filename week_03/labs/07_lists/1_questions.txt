@@ -1,18 +1,36 @@
 1 - Can you have a list with more than one type?
 
+You sure can!
+
 2 - How do you create a list?
+
+[] , _=list()
 
 3 - How do you nest a list?
 
+brackets in brackets [[]]
+
 4 - Lists are mutable. Explain this.
+
+You can add things to a list and take stuff out as well. CHANGE
 
 5 - What does it mean to have the [] operators on the left side of an assignment?
 
+an empty list?
+
 6 - What happens with a index value is negative? How does this change how an element is accessed?
+
+starts from the back end of a last. Last value is -1
 
 7 - How can you use the in operator to determine in a value exists in a list?
 
+Ex : cheese [ 'cheddar', 'edam', 'Gouda' ]
+
+ "edam" in cheese
+
 8 - How can you use the + and * operators on lists?
+
+
 
 9 - What is an augmented assignment statement?
 

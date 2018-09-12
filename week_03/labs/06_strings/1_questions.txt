@@ -1,6 +1,10 @@
 1 - What is a string?
 
+A type that represents sequences of characters
+
 2 - What is an index?
+
+A postion on a string or value using []
 
 3 - What letter will the following code print? Why?
 
@@ -8,26 +12,63 @@
     index_two = word[2]
     print index_two
 
+    It will print "l" because h starts 0 e is at 1 and l is at 2
+
 4 - What is the len() functions used for?
+
+return the lenght of a string
 
 5 - How can you get the last character of a word using the len() function?
 
+-1
+
 6 - What is string slicing and how does it work?
+
+using slice(:) a part of a string specified by a range of indices
 
 7 - How to do slice the string "python" to produce the string "thon"?
 
+python = "python"
+python[2:]
+
 8 - How can you use slicing to store the first and last character of a word in separate variables?
 
-9 - What are the answers to Exercise 8.4 (p.96) from the textbook?
+a = slice[-1:0)
+b = slice[-2:-1]
+
+
+9 - What are the answers to Exercise 8.4 (p.80) from the textbook?
+
+using = "jolly"
+
+1. Returns True because if statement is correct
+2. Returns True
+3. Returns "y" because thats the last character of the loop
+4. ??
+5. Return True because the true and false statements are out of scope
+
+
+
+
 
 10 - Can you change one or more character of a string? Why or why not?
 
+no you cant because strings are immutable. You can concat thats it
+
 11 - What is invocation?
+
+invoking a function or method on a string
 
 12 - How do you invoke the find() method on the string word with the value 'hello' to find the index of the letter e?
 
-13 - Complete Exercise 8.5 (p.96) (Caesar cypher) from the textbook.
+word.find(e)
+
+13 - Complete Exercise 8.5 (p.80) (Caesar cypher) from the textbook.
+
+
 
 14 - Follow the directions for Exercise 8.1 (p.79) until you feel comfortable with the string methods and what methods are available.
 
 15 - How is the in operator used?
+
+
