@@ -14,13 +14,34 @@ The output should look something like this:
 
 '''
 
-# initialize an empty string for our table
-mult_table = ""
+x = 1
+delimeter = "|"
+while x <= 10:
+    mult_table = ""
+    y = 1
+    while y <= 10:
+        if (x * y) < 10 or (y == 10 and x * y < 100):
+            delimeter = " |"
+        else:
+            delimeter = "|"
+        mult_table = mult_table + str(x + y) + delimeter
+        y += 1
+    print(mult_table)
+    x += 1
 
-for num in range(1, 11):
-    for n in range(1, 11):
-        # check out this awesome formatting option with <3 ;)
-        mult_table += f"{num * n: <3}|"
-    mult_table += "\n"
 
-print(mult_table)
+
+
+
+
+
+
+
+# mult_table = ""
+
+# for num in range(1, 11):
+#     for n in range(1, 11):
+#         mult_table += f"{num * n: <3}|"
+#     mult_table += "\n"
+
+# print(mult_table)
