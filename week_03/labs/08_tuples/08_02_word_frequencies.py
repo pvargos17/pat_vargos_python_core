@@ -10,3 +10,8 @@ Source: Chapter on "Tuples" in Think Python 2e:
 http://greenteapress.com/thinkpython2/html/thinkpython2013.html
 
 '''
+
+def most_frequent(s):
+    s_reverse = s[::-1]
+    print(s_reverse)
+print(most_frequent("dog"))

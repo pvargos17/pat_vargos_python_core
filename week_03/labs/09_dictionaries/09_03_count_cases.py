@@ -17,3 +17,18 @@ Example output:
     Punctuation: 1
 
 '''
+
+def long_func(sent):
+    new_dict = {}
+    for char in sent:
+        if char.isspace():
+            pass
+        elif char.isupper():
+            new_dict["uppercase"] = new_dict.get("uppercase", 0) + 1
+        elif char.islower():
+            new_dict["lowercase"] = new_dict.get("lowercase", 0) + 1
+        else:
+            new_dict["punctuation"] = new_dict.get("punctuation", 0) + 1
+    return (new_dict)
+
+print(long_func("I love to work with dictionaries!"))
