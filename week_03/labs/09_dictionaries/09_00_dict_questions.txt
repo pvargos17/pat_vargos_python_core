@@ -4,6 +4,7 @@ Although simliar, in a list indices have to be integers. In a dictionary they ca
 
 2 - What is a key-value pair?
 
+<<<<<<< HEAD:week_03/labs/09_dictionaries/1_questions.txt
 When a key is associated with a value, the association of a key and a value is call a key-value pair or item
 
 3 - How do you add an item to the dictionary first_dict using square brackets?
@@ -15,6 +16,16 @@ first_dict[''] = ''
 first_dict = { '':'', '':'', '':''}
 
 5 - When you print out a dictionary, is there a order to the items? Why or why not?
+=======
+3 - How do you add an item to the dictionary first_dict using square
+    brackets?
+
+4 - How do you add several items to the dictionary first_dict using
+    curly braces?
+
+5 - When you print out a dictionary, is there a order to the items?
+    Why or why not?
+>>>>>>> 4954c12e0e7d863018b443389a7b8e5555152274:week_03/labs/09_dictionaries/09_00_dict_questions.txt
 
 No order, it prints unpredictably
 
@@ -28,6 +39,7 @@ first_dict['key']
 
 8 - What is an implementation?
 
+<<<<<<< HEAD:week_03/labs/09_dictionaries/1_questions.txt
 is a way of performing a compution
 
 9 - Write an example for loop to traverse a dictionary loop_dict and print out the keys and values.
@@ -37,6 +49,13 @@ def loop_dict
         print(c, h[c])
 
 10 - How can you find search for a key given a value. What is this called?
+=======
+9 - Write an example for loop to traverse a dictionary loop_dict and
+    print out the keys and values.
+
+10 - How can you find search for a key given a value.
+    What is this called?
+>>>>>>> 4954c12e0e7d863018b443389a7b8e5555152274:week_03/labs/09_dictionaries/09_00_dict_questions.txt
 
 v =d[k] also known as loopup
 
@@ -54,9 +73,14 @@ outside of scope so they are accessed from any function
 
 14 - How do you reassign a global variable inside of a function?
 
+<<<<<<< HEAD:week_03/labs/09_dictionaries/1_questions.txt
 you have to assign in a new value locally
 
 15 - When do you not need to use the global keyword to modify the value of a global variable?
 
 if  the global variable refers to a mutable value
 
+=======
+15 - When do you not need to use the "global" keyword to modify the
+    value of a global variable?
+>>>>>>> 4954c12e0e7d863018b443389a7b8e5555152274:week_03/labs/09_dictionaries/09_00_dict_questions.txt
