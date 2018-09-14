@@ -11,4 +11,4 @@ http://greenteapress.com/thinkpython2/html/thinkpython2011.html
 '''
 
 def has_duplicates(l):
-    dic
+

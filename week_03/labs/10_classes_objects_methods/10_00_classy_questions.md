@@ -79,7 +79,7 @@ class Car():
 
 - How do `__init__` methods handle variable arguments?
 
-That's what python's __init__() method is used for. If defined for a class, it gets called right when the instance is created and assigns instance variables, that are defined in there and passed as arguments to the constructor. Let's look at an example of defining the Point() class with such a constructor.
+That's what python's __init__() method is used for. If defined for a class, it gets called right when the instance is created and assigns instance variables, that are defined in there and passed as arguments to the constructor.
 
 
 - What is the `__str__` method used for?

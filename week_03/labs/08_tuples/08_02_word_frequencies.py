@@ -12,6 +12,14 @@ http://greenteapress.com/thinkpython2/html/thinkpython2013.html
 '''
 
 def most_frequent(s):
-    s_reverse = s[::-1]
-    print(s_reverse)
+
+   for i in s:
+    if i in
+        pass
+
+
+
+
+
+
 print(most_frequent("dog"))
