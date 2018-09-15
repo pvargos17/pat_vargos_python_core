@@ -11,4 +11,15 @@ http://greenteapress.com/thinkpython2/html/thinkpython2011.html
 '''
 
 def has_duplicates(l):
+    new_dict = {}
+    for x in l:
+        if x in new_dict:
+            return True
+        new_dict[x] = "Duplicate"
+    return False
 
+p = ["baseball", "football", "basketball", "baseball"]
+v = ["baseball", "football", "basketball"]
+
+print(has_duplicates(p))
+print(has_duplicates(v))
