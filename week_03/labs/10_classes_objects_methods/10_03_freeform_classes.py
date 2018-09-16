@@ -24,8 +24,9 @@ Attributes:
             way_of_winning (str): Description
             number_of_playes (int) : Description
     """
-    motto = "Win!"
+    objective = "Win!"
     location = "stadium"
+
     def __init__(self, sport_name="Chicago Bears", number_of_playes="11", way_of_winning="scoring more!"):
         self.sport_name = sport_name
         self.number_of_playes = number_of_playes
@@ -45,8 +46,8 @@ Attributes:
         """
         return f"{self.sport_name} have {numer_of_championships} championship(s), & have {self.number_of_playes} players and win games by {self.way_of_winning}"
 
-    def __str__(self, motto, location):
-        return f"{motto} | {location} |{self.sport_name} | {self.number_of_playes} | {self.way_of_winning}"
+    def __str__(self):
+        return f"{self.sport_name} | {self.number_of_playes} | {self.way_of_winning}"
 
 
 

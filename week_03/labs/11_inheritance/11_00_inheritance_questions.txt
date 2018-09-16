@@ -1,12 +1,25 @@
 - What is the difference between class attributes and
     instance attributes?
 
+class attritbutes are already given in a class, where instance are passed through when an object is created
+
 - What is inheritance?
+
+The ability to define a new class that is a modified version of an existing class
+
 
 - Why do we use inheritance?
 
+We assign in it the parameter of a new class.
+
 - How does a class inherit another class?
+
+IS-A
 
 - What is an example of a parent/child class relationship?
 
+Cards could be a parent class and poker could be a child. It inherits cards
+
 - How many levels can a hierarchy extend?
+
+unlimited!

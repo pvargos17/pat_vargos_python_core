@@ -11,5 +11,5 @@ def cumsum(l):
             new_list.append(i)
         else:
             new_list.append(i + l[i-1])
-    print(new_list)
+    return (new_list)
 print(cumsum(t))
