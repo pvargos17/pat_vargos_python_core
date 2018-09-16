@@ -33,8 +33,7 @@ Attributes:
         self.way_of_winning = way_of_winning
 
     def description(self, numer_of_championships):
-        """
-            Describes the Sports Team with # of championships
+        """Describes the Sports Team with # of championships
 
             Args:
             Sport (str): Description
@@ -44,34 +43,31 @@ Attributes:
             Returns:
                 str: a sentence describing the Sports team
         """
-        return f"{self.sport_name} have {numer_of_championships} championship(s), & have {self.number_of_playes} players and win games by {self.way_of_winning}"
+        return f"{self.sport_name} have {numer_of_championships} championship(s), have {self.number_of_playes} players, and win games by {self.way_of_winning}"
 
     def __str__(self):
         return f"{self.sport_name} | {self.number_of_playes} | {self.way_of_winning}"
 
 
 
-#class WhiteSox():
-    """The Chicago White Sox are an American professional baseball team based in Chicago, Illinois
+class Employee():
+    """a person employed for wages or salary, especially at non-executive level.
 Attributes:
-            sport (str): Description
-            way_of_winning (str): Description
-            number_of_playes (int) : Description
+            age (str): Description
+            sex (str): Description
+            years with company (int) : Description
     """
+    purpose = "Perform work to collect income"
+    attire = "uniform"
+    def __init__(self, age="30", sex="N/A", tenure="0"):
+        self.age = age
+        self.sex = sex
+        self.tenure = tenure
 
-
-
-
-
-#class BirminghamBarons():
-    """The Birmingham Barons are a Minor League Baseball team based in Birmingham, Alabama.
-        The team, which plays in the Southern League,is the Double-A affiliate of the Chicago White
-         Sox and plays at Regions Field in downtown Birmingham
-Attributes:
-            sport (str): Description
-            way_of_winning (str): Description
-            number_of_playes (int) : Description
-    """
+    def description(self, employee_number):
+        return f"Employee # {employee_number} is a {self.age} year old {self.sex} who has worked {self.tenure} years with the company"
+    def __str__(self):
+        return f"{self.age} | {self.sex} | {self.tenure}"
 
 
 Chi_Bears = SportsTeam("DA BEARS", "11", "being monsters of the midway")
@@ -79,3 +75,6 @@ Chi_Flubs = SportsTeam("The Flubs","no class ", "stealing Theo or else they woul
 print(Chi_Bears.description(1))
 print(Chi_Flubs.description(2))
 print(Chi_Bears)
+Mark = Employee("27", "Male", "4")
+print(Mark.description(17))
+print(Mark)
