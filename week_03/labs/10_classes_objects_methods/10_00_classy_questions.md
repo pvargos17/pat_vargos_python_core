@@ -6,7 +6,7 @@ a programmer-defined type
 
 - How do you define a new class called `MyFirstClass`?
 
-Class MyfirstClass:
+Class MyFirstClass():
 
 - How do you create an object of the class `MyFirstClass`?
 

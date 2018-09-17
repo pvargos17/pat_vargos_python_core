@@ -9,6 +9,8 @@ tuple()
 
 3 - Give an example of tuple assignment to assign two variables.
 
+name, age = "henry", 32
+
 t - a, b = b, a
 
 4 - Why is it beneficial to return a tuple from a function?

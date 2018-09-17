@@ -16,7 +16,7 @@ You can add things to a list and take stuff out as well. CHANGE
 
 5 - What does it mean to have the [] operators on the left side of an assignment?
 
-an empty list?
+referencing an idex value, if on right, you would be creating
 
 6 - What happens with a index value is negative? How does this change how an element is accessed?
 
@@ -39,9 +39,9 @@ Ex : cheese [ 'cheddar', 'edam', 'Gouda' ]
 
 10 - WHat are three ways delete an element from a list? How are they different?
 
-pop()
-del
-remove
+_list.pop()
+_list.del()
+remove() ---- index value
 
 11 - What is the difference between and list and a string?
 
@@ -85,9 +85,14 @@ Aliased
 
 append()
 
+t1 = [1,2]
+t1[1] = 4
+
 20 - Give an example of an operation that creates a new list.
 
 list()
+
+
 
 21 - What is one reason it is important to know the difference between the two kinds of operations above?
 

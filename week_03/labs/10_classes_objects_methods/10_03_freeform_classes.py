@@ -70,11 +70,38 @@ Attributes:
         return f"{self.age} | {self.sex} | {self.tenure}"
 
 
+
+class Student():
+    """a person who is studying at a university or other place of higher education
+    Attributes:
+        name(str) = Description
+        age(str) = Description
+        ID_num (str) = Description
+    """
+
+
+    def __init__(self, name="Bob", sex="N/A", id_num="18"):
+        self.name = name
+        self.sex = sex
+        self.id_num = id_num
+
+    def description(self, school_year):
+        return f"{self.name} is student # {self.id_num}, who is a {self.sex} {school_year}"
+    def __str__(self):
+        return f"{self.name} | {self.sex} | {self.id_num}"
+
 Chi_Bears = SportsTeam("DA BEARS", "11", "being monsters of the midway")
 Chi_Flubs = SportsTeam("The Flubs","no class ", "stealing Theo or else they would go back to sucking!")
 print(Chi_Bears.description(1))
 print(Chi_Flubs.description(2))
 print(Chi_Bears)
-Mark = Employee("27", "Male", "4")
+Mark = Employee("26", "Male", "4")
+Michelle = Employee("27", "Female", "9")
 print(Mark.description(17))
+print(Michelle.description(31))
 print(Mark)
+Emily = Student("Emily", "Female", "17")
+Art = Student("Art", "Male", "21")
+print(Emily.description("Freshman"))
+print(Emily)
+
