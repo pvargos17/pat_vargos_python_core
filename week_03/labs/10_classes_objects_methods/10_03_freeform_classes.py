@@ -27,7 +27,7 @@ Attributes:
     objective = "Win!"
     location = "stadium"
 
-    def __init__(self, sport_name="Chicago Bears", number_of_playes="11", way_of_winning="scoring more!"):
+    def __init__(self, sport_name="Chicago Bears", number_of_playes=11, way_of_winning="scoring more!"):
         self.sport_name = sport_name
         self.number_of_playes = number_of_playes
         self.way_of_winning = way_of_winning
@@ -53,13 +53,13 @@ Attributes:
 class Employee():
     """a person employed for wages or salary, especially at non-executive level.
 Attributes:
-            age (str): Description
+            age (int): Description
             sex (str): Description
             years with company (int) : Description
     """
     purpose = "Perform work to collect income"
     attire = "uniform"
-    def __init__(self, age="30", sex="N/A", tenure="0"):
+    def __init__(self, age=30, sex="N/A", tenure=0):
         self.age = age
         self.sex = sex
         self.tenure = tenure
@@ -75,11 +75,11 @@ class Student():
     """a person who is studying at a university or other place of higher education
     Attributes:
         name(str) = Description
-        age(str) = Description
+        sex"str" = Description
         ID_num (str) = Description
     """
-
-
+    goal = "Graduate"
+    supplies = ["backpack", "pencil", "paper"]
     def __init__(self, name="Bob", sex="N/A", id_num="18"):
         self.name = name
         self.sex = sex
@@ -90,18 +90,21 @@ class Student():
     def __str__(self):
         return f"{self.name} | {self.sex} | {self.id_num}"
 
-Chi_Bears = SportsTeam("DA BEARS", "11", "being monsters of the midway")
-Chi_Flubs = SportsTeam("The Flubs","no class ", "stealing Theo or else they would go back to sucking!")
-print(Chi_Bears.description(1))
-print(Chi_Flubs.description(2))
-print(Chi_Bears)
-Mark = Employee("26", "Male", "4")
-Michelle = Employee("27", "Female", "9")
-print(Mark.description(17))
-print(Michelle.description(31))
-print(Mark)
-Emily = Student("Emily", "Female", "17")
-Art = Student("Art", "Male", "21")
-print(Emily.description("Freshman"))
-print(Emily)
+chi_Bears = SportsTeam("DA BEARS", 11, "being monsters of the midway")
+chi_Bears.number_of_playes += 1
+chi_Flubs = SportsTeam("The Flubs", 0, "stealing Theo or else they would go back to sucking!")
+chi_Flubs.number_of_playes += 2
+print(chi_Bears.description(1))
+print(chi_Flubs.description(2))
+print(chi_Bears)
+mark = Employee(26, "Male", 4)
+michelle = Employee(27, "Female", 9)
+mark
+print(mark.description(17))
+print(michelle.description(31))
+print(mark)
+emily = Student("Emily", "Female", 17)
+art = Student("Art", "Male", 21)
+print(emily.description("Freshman"))
+print(emily)
 

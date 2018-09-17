@@ -98,8 +98,13 @@ changing the behavior of an operator so that it works with programmer-defined ty
 
 - What is an example of operator overloading?
 
+class MyClass:
 
+    def __str__ ():
+        print()
 
+    print(x)
+    x.__str__()
 
 ## TYPE-BASED DISPATCH?
 
