@@ -35,8 +35,6 @@ for dic in office:
             last = name_list[0]
         elif key == "item":
             second = dic[key]
-            y = len(first+second)
-            z = (43-y)
             full_name = first + ", " + last
             print(f"{full_name:<20} {second}")
     print()

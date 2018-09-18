@@ -9,6 +9,7 @@ The script should keep prompting the user until they enter an integer.
 while True:
     try:
         check_int = int(input('Please input a number: '))
+        print(check_int)
         #if type(check_int) == int
         break
     except ValueError:
