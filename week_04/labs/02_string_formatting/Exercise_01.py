@@ -25,3 +25,20 @@ office = [
     {"full_name": "Creed Bratton", "item": "mung beans"},
     {"full_name": "Darryl Philbin", "item": "forklift"},
 ]
+
+for dic in office:
+    for key in dic:
+        if key == "full_name":
+            name = dic[key]
+            name_list = name.split(" ")
+            first = name_list[1]
+            last = name_list[0]
+        elif key == "item":
+            second = dic[key]
+            y = len(first+second)
+            z = (43-y)
+            full_name = first + ", " + last
+            print(f"{full_name:<20} {second}")
+    print()
+    #     print(dic[key], end=" ")
+    # print()
