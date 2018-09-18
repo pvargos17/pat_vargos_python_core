@@ -15,3 +15,8 @@ Source: Read through the "Files" chapter in Think Python 2e:
 http://greenteapress.com/thinkpython2/html/thinkpython2015.html
 
 '''
+def sed(str, r_str, x, y ):
+    fin = open('words.tx')
+    for line in fin:
+        fout = open(line, "w")
+
