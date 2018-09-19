@@ -15,8 +15,37 @@ Source: Read through the "Files" chapter in Think Python 2e:
 http://greenteapress.com/thinkpython2/html/thinkpython2015.html
 
 '''
-def sed(str, r_str, x, y ):
-    fin = open('words.tx')
-    for line in fin:
-        fout = open(line, "w")
+from __future__ import print_function, division
 
+
+def sed(p_string, r_string, source, dest):
+    """Reads a source file and writes the destination file.
+
+    In each line, replaces pattern with replace.
+
+    pattern: string
+    replace: string
+    source: string filename
+    dest: string filename
+    """
+    fin = open(source, 'r')
+    fout = open(dest, 'w')
+
+    for line in fin:
+        line = line.replace(p_string, re_string)
+        fout.write(line)
+
+    fin.close()
+    fout.close()
+
+
+def main():
+    p_string = 'pattern'
+    r_string = 'replace'
+    source = 'sed_tester.txt'
+    dest = source + '.replaced'
+    sed(p_string, r_string, source, dest)
+
+
+if __name__ == '__main__':
+    main()
