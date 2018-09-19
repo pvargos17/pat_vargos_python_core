@@ -9,3 +9,7 @@ for letter in 'suchalongword':
 print(letters)
 
 '''
+letter = "suchalongword"
+
+new_letters = [(n) for n in letter]
+print(new_letters)
