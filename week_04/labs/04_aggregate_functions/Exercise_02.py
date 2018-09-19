@@ -9,3 +9,9 @@ for i in range(len(courses)):
     print(f"{i}: {courses[i]} python")
 
 '''
+
+
+classes = ['Math', 'Science', 'Language', 'P.E.']
+
+for i, c in enumerate(classes):
+    print(f"{i}: {c}")
