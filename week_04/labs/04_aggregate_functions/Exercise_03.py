@@ -10,4 +10,6 @@ _list=["dog", "cat", "snake"]
 
 
 def my_enmerate(iterable):
-
+    for i in range(len(iterable)):
+        print(i, iterable[i])
+print(my_enmerate(_list))
