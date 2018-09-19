@@ -51,12 +51,17 @@ Attributes:
 
 class ChicagoSox(SportsTeam):
     def __init__(self):
+        sports_name = "baseball"
+        number_of_players = 9
+        ways_of_winning = "Score more runs than opponent"
+        SportsTeam.__init__(self, sports_name, number_of_players, way_of_winning)
 
-
-
-
-
-
+class BirminghamBarons(ChicagoSox):
+    def __init__(self):
+        sports_name = "baseball"
+        number_of_players = 9
+        ways_of_winning = "Score more runs than opponent"
+        ChicagoSox.__init__(self, sports_name, number_of_players, way_of_winning)
 
 
 
@@ -79,6 +84,22 @@ Attributes:
     def __str__(self):
         return f"{self.age} | {self.sex} | {self.tenure}"
 
+class Salaried(Employee):
+    def __init__(self, payment):
+        def __init__(self):
+        age = age
+        sex = "sex"
+        tenure = tenure
+        self.payment = "salaried"
+    Employee.__init__(self, age, sex, tenure):
 
+class UnSalaried(Employee):
+    def __init__(self, payment):
+        def __init__(self):
+        age = age
+        sex = "sex"
+        tenure = tenure
+        self.payement = "hourly"
+    Employee.__init__(self, age, sex, tenure):
 
 
