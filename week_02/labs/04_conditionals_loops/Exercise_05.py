@@ -8,13 +8,34 @@ Take two numbers from the user, an upper and lower bound. Using a loop, calculat
 		The average is: 50.5
 '''
 
-user_numbers = (int(input("upper bound", "lower bound")))
-average = ((lower bound + upper bound) / 2)
-for i in user_numbers:
-    if i > {}.format(lowerbound):
-    sum += ({} + {}).format(lower bound, lower bound +1)
-else:
-    print(sum)
+
+def u_d_sum():
+    upper = int(input("Please enter an upperbound: "))
+    downer = int(input("Please enter a lowerbound: "))
+    average = (upper - downer)/2
+    counter = 0
+    for i in range(downer, upper + 1):
+            counter += i
+
+    print(counter)
     print(average)
+
+print(u_d_sum())
+
+
+
+
+
+
+
+
+# user_numbers = (int(input("upper bound", "lower bound")))
+# average = ((lower bound + upper bound) / 2)
+# for i in user_numbers:
+#     if i > {}.format(lowerbound):
+#     sum += ({} + {}).format(lower bound, lower bound +1)
+# else:
+#     print(sum)
+#     print(average)
 
 
