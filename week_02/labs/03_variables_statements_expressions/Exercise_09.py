@@ -8,5 +8,5 @@ Display the cost of the trip in the console.
 
 '''
 def cost_func(x,y,z):
-    return y/z * x
+    return (x/y) * z
 print(cost_func(120,30,3))

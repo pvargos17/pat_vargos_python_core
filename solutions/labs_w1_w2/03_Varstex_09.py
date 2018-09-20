@@ -16,9 +16,12 @@ print("""
 """)
 
 # get user input
-miles_to_drive = float(input("How many miles do you need to drive? "))
-mpg_of_car = float(input("How many MPG can your car reach? "))
-price_per_gallon = float(input("How much does 1 gallon of fuel cost? "))
+miles_to_drive = 120
+# float(input("How many miles do you need to drive? "))
+mpg_of_car = 30
+# float(input("How many MPG can your car reach? "))
+price_per_gallon = 3
+# float(input("How much does 1 gallon of fuel cost? "))
 
 # calculate cost of trip
 cost_for_trip = miles_to_drive / mpg_of_car * price_per_gallon
