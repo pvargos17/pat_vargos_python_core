@@ -14,6 +14,6 @@ NOTE: if you get an error, look up what input() returns!
 
 def converter(celsius):
     f = (celsius * 1.8 + 32)
-    return "{} degrees celsius = {} degrees fahrenheit".format(celsius,f)
+    return f"{celsius} degrees celsius = {f} degrees fahrenheit"
 
 print(converter(27.4))
