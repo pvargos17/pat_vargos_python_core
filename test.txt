@@ -1,0 +1,286 @@
+
+- What are the three primary tenants of Object Oriented Programming (OOP):
+encapsulation, inheritance, polymorism
+
+- Why is OOP useful?
+
+It allows us to not have to repeat code. We can reuse methods(functions in class
+) whenever we need.
+
+
+
+- Using the command line, how do you:
+    - change directories? - cd
+    - list the contents of a folder? ls -al
+    - print the path of the current directory? pwd
+    - move a file from one location to the another?cmdp
+    - copy a file from one location to another? cmpd
+    - create a file? touch
+    - create a folder? mkdir
+    - delete a file? rm -r
+    - delete a folder? rm
+    - print the contents of a file?
+    - edit the contents of a file?
+- How do you create and activate a virtual environment? vim (wtvryouwanttocallit
+
+- Answer the following question on Git and Github:
+    - What is a branch? a repository off of the master 
+    - What is a remote? on your local machine
+- What are the commands to do the following? 
+    - initialize a git repository- git init 
+    - clone a repository from Github- git  clone ...paste link
+    - add a file to the staging area- git add .(adds all) or you can type individual
+    - make a commit- git commit -m "wtvr you want to call"
+    - push to Github- push (name of remote)
+    - pull from Githubg- git  pull (name of master repository)
+    - see the names of the branches 
+    - see the names of the remotes
+    - add a new remote
+- Why is the following code bad form?
+    try:
+        print(10/0)
+    except Exception as exc:
+        print(exc)
+    except ZeroDivisionError as zde:
+        print zde
+variables shouldnt start with integers 
+
+
+- Write a function that takes in the name of a file, reads the contents
+of that file word by word and places each word in a list, then prints
+the list to the console.
+
+def func(file)
+	new_list = []
+	open(file,"r"):
+		for word in file:
+			new_list.append(word)
+	print(new_list)
+print(func(file))	
+
+
+- Create a custom exception below:
+	try: 
+
+- Write a very simple function that demonstrates raising the exception above:
+- Explain the following keywords:
+    -try - inits a func/method
+    -except - makes an exception
+    -raise - raises an exception
+    -finally - basically return. ends func
+    -return - ends function/method. wont return "none"
+    -break - gets you out of a loop
+    -continue - if an exception continue with function/method
+
+- Explain the difference between a class attribute and instance attribute:
+
+class attribute is given to every object created to that class. Just like a global variable. An instance is indivudal to that given object created.
+
+- Write a complete method that reverses a list in place using only one
+extra variable:
+
+_list = [1,2,3,4,5]
+	for i in _list:
+
+- When should you throw an exception rather than catch the exception?
+ you should catch an exception if you can do something with it right then in the method
+
+throw it if it will just give you a failure and you can not use it
+
+- Demonstrate a while loop, and a for loop, that print out every other
+odd number between 1000 and 0 in a descending order:
+
+ for i in range(1000,-1,-1)
+	print(i)
+
+ count = 1000
+ while count > 0 :
+ print (count)
+ count = count -
+
+- How comfortable do you feel answering the questions above?
+the loops? all good homies 
+
+- Describe a variable and a value through their relationship.
+
+a variable is holder for a value. A value is actaul data (int, str..)
+
+- What are five common data types in Python?
+ int, float, str, boolean, obj
+
+- What is the difference between an expression and a statement?
+
+an expression evaluates to a value, while a statement does something like a command. 
+
+- What are relational operators?
+
+<,>, =, =!, ==, 
+compare two data types
+
+- What is the difference between == and = ?
+
+= this assigns a value
+
+== this is comparing if both are actaully equal value
+- Demonstrate the use of an if/elif/else conditional.
+
+def odd_even(num):
+	num = int(input("Please type a number: "))
+	if num ==  0 
+		print("number is not odd or even!)
+	elif num % 2 == 0 :
+		print("number is even!)
+	else:
+		print("number is odd!)
+
+- What does mean to have a function that "takes" a value or argument?
+ you are passing it a paramater 
+
+- What is a return value?
+
+final value/ product of a function/method. If you dont return a value you will receive "None"
+
+- How do you import a class to one of your programs?
+
+ type import followed by the .name of class you are importing from
+
+- Give an example of composition in a function call?
+- Do parameters and variables inside of a function exist outside of it?
+Why or why not?
+
+they only live in the function they are created. If they are outside of a function they are global variable and can be accessable to any functions below 
+
+- What is the difference between a "fruitful" function and a void function?
+
+void functions do not return a value, while fruitful field a value.
+
+- What are some of the reasons we separate our code into functions?
+
+so we can access them later and do not have to repeat
+
+- What is the difference between the following two statements?
+    import math - this imports all math
+    <and>
+    from math import * this goes directly to the mutliplication 
+    <and>
+    import math as m this imports math an assigns it to m
+    How can you use the functions of the math module in each case?
+
+
+- What is an index?
+
+_ list = [1,2,3,4,5,]
+a given postion of a value. Such as _List[2] would be 3
+
+- How do you use slicing to produce the string "coding" from the string
+
+str_1 = "I love coding!!!"?
+
+x = str_1.slice("coding)
+
+print(x)
+
+- How do you invoke the replace() method on the string
+
+ 'coding is the best' to replace all 's' characters with 'z' characters?
+
+def test(str): 
+	return str.("s","z")
+butthole = 'coding is the best'
+print(test(butthole)
+
+- What is the difference between and list and a string?
+
+a string is characters 
+a list in a given "group" of values that could be strings, ints , objects....
+lists are mutable
+
+- How do you use a delimiter with the split() method?
+
+ S.split('\\')
+
+- If two objects are identical does that also make them equivalent?
+Why or why not?
+
+No, because an object created is its own. It cant be identical
+
+- What is a reference?
+
+a reference is a specific location where data is stored, such as an object
+
+- What is it called when an object has more than one reference?
+
+
+
+- How do you add an item to the dictionary first_dict using square
+    brackets?
+
+first_dict["Tobby"] = "Flenderson"
+
+- Write an example for loop to traverse a dictionary loop_dict and
+    print out the keys and values.
+- What is a class?
+
+easy terms because im almost out of time - an object creater a blue print essentailly
+
+- What are class attributes?
+
+ values given to every object created for a class, like a global variable. 
+
+- What does it mean when an object is embedded?
+
+- How is a method different than a function?
+
+methods are built into a class. 
+
+- What is the `__init__` method and what is it used for?
+
+this is used to used to make instance attributes for a given class
+
+- Give an example `__init__` method for a `Car` class with attributes:
+`make`, `model` and `year`.
+
+class Car():
+
+def __init_ (self, make, model, year):
+	self.make = "make"
+	self.model = "model"
+	self.year = "year"
+
+- What is operator overloading? Give an example.
+
+you can add ints and you can also add strings(concat) because the "+" is overloaded by both classes 
+form of polymormism i think?
+- How does a class inherit another class?
+
+pass the class in the paramter of the class your are created. 
+
+- How do you open a file in write mode? Write some example code below.
+
+open(file.txt," w"
+
+- Can you have a 'try' without an 'except'? Can you have an 'except' without
+a 'try'? Bonus: How does 'else' fit into this picture?
+
+- What is the variable `__name__` used for?
+
+- Write a list comprehension to add 1 to all items in a list of
+integers called "_list"
+
+- What does enumerate() do?
+
+- You have an object that prints "<generator object <genexpr> at 0x104150eb8>"
+to the console. How can you access its values?
+- What is the advantage of using a generator object compared to a list?
+
+- What are the key (conceptual) points when constructing a decorator
+function? What does it need to do?
+
+
+- When are decorator functions useful?
+
+- What happens when you use the @decorator syntax when defining a function?
+
+- Write code that prints out all items passed to a function.
+The amount of items should be able to be different for every function call.
+

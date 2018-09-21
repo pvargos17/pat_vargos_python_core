@@ -8,4 +8,4 @@ def is_palindrome(s):
         return True
     return False
 
-print(is_palindrome("car"))
+print(is_palindrome("baloon"))

@@ -19,7 +19,7 @@ def process_file(filename, skip_header):
 
     filename: string
     skip_header: boolean, whether to skip the Gutenberg header
-   
+
     returns: map from each word to the number of times it appears.
     """
     hist = {}
@@ -85,7 +85,7 @@ def most_common(hist):
 
 def print_most_common(hist, num=10):
     """Prints the most commons words in a histgram and their frequencies.
-    
+
     hist: histogram (map from word to frequency)
     num: number of words to print
     """
@@ -154,6 +154,8 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
 
+
+
+f
 
