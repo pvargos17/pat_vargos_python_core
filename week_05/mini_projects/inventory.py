@@ -11,8 +11,10 @@ class MyApp:
         fileinfo = self.filereader()
         if method == 'GET':
             path_list = path.split("/")
-            if len(path_list) > 1:
-                inven = json.dump(path_list[-1])
+            print("i am inside1")
+            if len(path_list) > 2:
+                print(path_list)
+                inven = json.dumps(fileinfo[path_list[2]])
                 return  inven
             else:
                 inven = json.dumps(fileinfo)
@@ -22,11 +24,18 @@ class MyApp:
             query_list=query.split("=")
             count = int(query_list[1])
             path_list = path.split("/")
-            item = path_list[1]
+            item = path_list[2]
             if item in fileinfo:
                 fileinfo[item] += count
+                inven = json.dumps(fileinfo)
+                self.filewriter(fileinfo)
+                return inven
             else:
                 fileinfo.update({item : count})
+                inven = json.dumps(fileinfo)
+                self.filewriter(fileinfo)
+                return inven
+
 
 
         # elif method == 'DELETE':
