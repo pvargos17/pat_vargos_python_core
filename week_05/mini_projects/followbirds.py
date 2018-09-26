@@ -37,11 +37,11 @@ def counter(l):
         #print(x + " has " + count + " followers")
         if count > 200:
             list_1.append(x)
-        elif count > 180:
+        elif count > 170:
             list_2.append(x)
         else:
             list_3.append(x)
-    print(f"{list_1} has more than 200 followers, {list_2} has more than 100 followers, and {list_3} is a loser.")
+    print(f"{list_1[0]} has more than 200 followers, {list_2[0]} has more than 100 followers, and {list_3[0]} is a loser.")
 
 
 user_list = ['Croc_a_Dogs', 'ChookByTheBook', 'MPSquared_']
