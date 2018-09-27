@@ -19,12 +19,21 @@ it uses the three-parameter version of find from the previous section.
 '''
 
 # 1.)
-def a_counter(s,a):
-    count = 0
-    for letter in s:
-        if letter == a:
-            count += 1
-    return count
-print(a_counter("banana", "a"))
+
+def count(str,ltr):
+
+
+
+
+
+
+
+# def a_counter(s,a):
+#     count = 0
+#     for letter in s:
+#         if letter == a:
+#             count += 1
+#     return count
+# print(a_counter("banana", "a"))
 
 
