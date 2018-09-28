@@ -26,21 +26,23 @@ office = [
     {"full_name": "Darryl Philbin", "item": "forklift"},
 ]
 
-for dic in office:
-    for key in dic:
-        if key == "full_name":
-            name = dic[key]
-            name_list = name.split(" ")
-            first = name_list[1].upper()
-            last = name_list[0]
-        elif key == "item":
-            second = dic[key]
-            full_name = first + ", " + last
-            print(f"{full_name:<20} {second}")
-    print()
+# for dic in office:
+#     for key in dic:
+#         if key == "full_name":
+#             name = dic[key]
+#             name_list = name.split(" ")
+#             first = name_list[1].upper()
+#             last = name_list[0]
+#         elif key == "item":
+#             second = dic[key]
+#             full_name = first + ", " + last
+#             print(f"{full_name:<20} {second}")
+#     print()
 
 
-# for character in office:
-#     first, last = character["full_name"].split()
-#     form_name = f'{last.upper()}, {first.capitalize()}'
-#     print(f'{form_name: <20}{character["item"].capitalize()}')
+
+
+for character in office:#this is cleaner version
+    first, last = character["full_name"].split()
+    form_name = f'{last.upper()}, {first.capitalize()}'
+    print(f'{form_name: <20}{character["item"].capitalize()}')
